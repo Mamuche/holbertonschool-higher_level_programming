@@ -3,7 +3,6 @@ from add_0 import add
 
 a = 1
 b = 2
-c = add(a, b)
-print("{} + {} = {}".format(a, b, c))
-# autre facon de print
-# print(a, "+", b, "=",c)
+print("{} + {} = {}".format(a, b, add(a, b)))
+# autre façon de print
+# print(a, "+", b, "=", add(a, b))
