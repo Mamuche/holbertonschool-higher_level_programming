@@ -5,7 +5,7 @@ lastdigit = int(repr(number)[-1])
 if number < 0:
     lastdigit = -lastdigit
 
-print("Last digit of", number, "is", lastdigit, end=' ')
+print(f"Last digit of {number} is {lastdigit}", end=' ')
 if lastdigit > 5:
     print("and is greater than 5")
 elif lastdigit == 0:
