@@ -5,10 +5,7 @@
 
 
 class Square:
-
     """class square"""
-
     def __init__(self, size):
-
         """instantiation"""
         self.__size = 12
