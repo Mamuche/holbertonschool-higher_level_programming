@@ -1,0 +1,82 @@
+The ``0-add_integer`` module
+======================
+
+Using ''add_integer''
+----------------------
+
+Importing the function from the module:
+	>>> add_integer = __import__("0-add_integer").add_integer
+
+Test simple int
+    >>> add_integer(2, 5)
+    7
+
+Test negative and positive int
+    >>> add_integer(-7, 8)
+    1
+
+Test with float and int
+    >>> add_integer(6.4, 3)
+    9
+
+Test with negative float and int
+    >>> add_integer(9, -2.5)
+    7
+
+Test with negative result
+    >>> add_integer(10, -15)
+    -5
+
+Test with value 0
+    >>> add_integer(0, 5)
+    5
+
+Test with no value
+    >>> add_integer(6)
+    104
+
+Test with long int
+    >>> add_integer(5698513484116146415246485761149614, 465497461596741976542416598461481461714764)
+    465497467295255460658563013707967222864378
+
+Test with letter in arg
+    >>> add_integer(9, b)
+    Traceback (most recent call last):
+    NameError: name 'b' is not defined
+
+Test with letter in first arg
+    >>> add_integer(y, 7)
+    Traceback (most recent call last):
+    NameError: name 'y' is not defined
+
+Test with char
+    >>> add_integer(2, "test")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Test with char in first arg
+    >>> add_integer("hello", 4)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test with 2 chars arg
+    >>> add_integer("hello", "world")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Test with empty arg
+    >>> add_integer()
+    Traceback (most recent call last):
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test with space
+    >>> add_integer(  2,  3  )
+    5
+    
+Test with juste comma
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+
+
