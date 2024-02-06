@@ -1,0 +1,77 @@
+The ``3-say_my_name`` module
+======================
+
+Using ''say_my_name''
+----------------------
+
+Importing the function from the module:
+    >>> say_my_name = __import__("3-say_my_name").say_my_name
+
+Test with str
+    >>> say_my_name("Roger", "Durant")
+    My name is Roger Durant
+
+Test with one letter
+    >>> say_my_name("P", "m")
+    My name is P m
+
+Test with lower and upper
+    >>> say_my_name("ROGER", "durant")
+    My name is ROGER durant
+
+Test with str/int
+    >>> say_my_name("Patrick", "568")
+    My name is Patrick 568
+
+Test with str/int without ""
+    >>> say_my_name("Patrick", 568)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
+Test with int/str
+    >>> say_my_name(666, "Lucifer")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+Test with None arg
+    >>> say_my_name("Martin")
+    My name is Martin 
+
+Test with None
+    >>> say_my_name()
+    Traceback (most recent call last):
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Test with just comma
+    >>> say_my_name("", "")
+    My name is 
+
+Test with 3 arg
+    >>> say_my_name("Roger", "Patrick", "Martin")
+    Traceback (most recent call last):
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
+
+Test special charactere
+    >>> say_my_name("L!lou", "M@rt!n")
+    My name is L!lou M@rt!n
+
+Test with space
+    >>> say_my_name("  Ro  ger   ", "Du  p  uit  ")
+    My name is   Ro  ger    Du  p  uit  
+
+Test with space
+    >>> say_my_name(  "Roger"   ,   "Dupuit"  )
+    My name is Roger Dupuit
+
+Test without double quotes
+    >>> say_my_name(Martin, Ficus)
+    Traceback (most recent call last):
+    NameError: name 'Martin' is not defined
+
+Test with dashes
+    >>> say_my_name("Pierre-Loup", "SSM")
+    My name is Pierre-Loup SSM
+
+Test with underscores
+    >>> say_my_name("Jean", "Phil_ou")
+    My name is Jean Phil_ou
