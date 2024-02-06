@@ -1,0 +1,68 @@
+The ``5-text_indentation`` module
+======================
+
+Using ''text_indentation''
+----------------------
+
+Importing the function from the module:
+    >>> text_indentation = __import__("5-text_indentation").text_indentation
+
+Test with no text
+    >>> text_indentation("")
+
+
+Test with 2 texts
+    >>> text_indentation("first text", "second text")
+    Traceback (most recent call last):
+    TypeError: text_indentation() takes 1 positional argument but 2 were given
+
+Test with int
+    >>> text_indentation(5)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Test with spaces
+    >>> text_indentation("Hel      lo  ,   w   orld   !   ")
+    Hel      lo  ,   w   orld   !   
+
+Test without . ? :
+    >>> text_indentation("Hello world")
+    Hello world
+
+Test with just . ? :
+    >>> text_indentation(".?:")
+    .
+
+    ?
+
+    :
+
+
+Test without space
+    >>> text_indentation("itissofunny")
+    itissofunny
+
+Test with float
+    >>> text_indentation(6.4)
+    Traceback (most recent call last):
+    TypeError: text must be a string
+
+Test with \n at the start
+    >>> text_indentation("\n Holberton School")
+    
+     Holberton School
+
+Test with \n in the middle
+    >>> text_indentation("Holberton \n School")
+    Holberton 
+     School
+
+Test with \n at the end
+    >>> text_indentation("Holberton School \n")
+    Holberton School 
+
+
+Test with None
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
