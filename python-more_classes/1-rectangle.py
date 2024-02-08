@@ -14,10 +14,12 @@ class Rectangle:
     """decorators for width"""
     @property
     def width(self):
-        return self.__width
+        """get private instance"""
+        return (self.__width)
 
     @width.setter
     def width(self, value):
+        """get private instance"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
