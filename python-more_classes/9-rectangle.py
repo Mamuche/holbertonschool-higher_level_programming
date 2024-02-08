@@ -90,4 +90,4 @@ class Rectangle:
         """returns a new Rectangle instance """
         height = size
         width = size
-        return (cls(height, width))
+        return cls(height, width)
