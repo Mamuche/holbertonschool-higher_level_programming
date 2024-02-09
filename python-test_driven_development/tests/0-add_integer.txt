@@ -40,8 +40,9 @@ Test with long int
     465497467295255460658563013707967222864378
 
 Test with float infinity
-    >>> add_integer(float('inf'))
-    Traceback (most recent call last):
+	>>> add_integer(1, float('inf'))
+	Traceback (most recent call last):
+	...
 	OverflowError: cannot convert float infinity to integer
 
 Test with float Nan
