@@ -32,9 +32,7 @@ Test without . ? :
 Test with just . ? :
     >>> text_indentation(".?:")
     .
-
     ?
-
     :
 
 
@@ -49,7 +47,6 @@ Test with float
 
 Test with \n at the start
     >>> text_indentation("\n Holberton School")
-    
      Holberton School
 
 Test with \n in the middle
