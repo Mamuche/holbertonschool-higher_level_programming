@@ -16,7 +16,7 @@ def text_indentation(text):
             else:
                 i = 1
         if i == 1:
-            if char in [".","?",":"]:
+            if char in [".", "?", ":"]:
                 print((char))
                 print()
                 i = 0
