@@ -35,7 +35,6 @@ Test with just . ? :
     ?
     :
 
-
 Test without space
     >>> text_indentation("itissofunny")
     itissofunny
@@ -47,7 +46,7 @@ Test with float
 
 Test with \n at the start
     >>> text_indentation("\n Holberton School")
-     Holberton School
+    Holberton School
 
 Test with \n in the middle
     >>> text_indentation("Holberton \n School")
