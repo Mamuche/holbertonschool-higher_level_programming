@@ -34,8 +34,6 @@ Test with none
 
 Test with 0
     >>> print_square(0)
-    Traceback (most recent call last):
-
 
 Test with letter
     >>> print_square(k)
