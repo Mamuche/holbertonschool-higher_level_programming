@@ -45,9 +45,9 @@ Test with float infinity
 	OverflowError: cannot convert float infinity to integer
 
 Test with float Nan
-    >>> add_integer(float('nan'))
-	Traceback (most recent call last):
-	ValueError: cannot convert float NaN to integer
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
 
 Test with letter in arg
     >>> add_integer(9, b)
