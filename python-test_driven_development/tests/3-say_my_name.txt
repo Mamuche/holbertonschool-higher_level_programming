@@ -46,6 +46,7 @@ Test with just comma
     >>> say_my_name("", "")
     My name is
 
+
 Test with 3 arg
     >>> say_my_name("Roger", "Patrick", "Martin")
     Traceback (most recent call last):
