@@ -5,6 +5,7 @@
 
 
 def text_indentation(text):
+    """print text with conditions"""
     if type(text) is not str:
         raise TypeError("text must be a string")
     i = 0
