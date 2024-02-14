@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-"""add public instance in a class"""
+"""add public instance def area"""
 
 
 class BaseGeometry:
