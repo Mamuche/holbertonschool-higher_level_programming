@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-
-
 """function for is_same_class"""
 
 
