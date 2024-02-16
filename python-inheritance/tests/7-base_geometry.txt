@@ -2,8 +2,9 @@ doctest for 7-base_geometry.py
 ==============================
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> bg = BaseGeometry()
 ------------------------------
+>>> bg = BaseGeometry()
+
 
 Test type
     >>> type(bg)
