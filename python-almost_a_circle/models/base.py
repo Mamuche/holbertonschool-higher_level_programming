@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """create class Base"""
 
+
 class Base:
     """private class attribut"""
     __nb_objects = 0
