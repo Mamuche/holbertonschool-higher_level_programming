@@ -6,6 +6,7 @@ from models.base import Base
 class Rectangle(Base):
     """class Rectangle inherits from Base"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """constructor"""
         self.validator(width=width, height=height, x=x, y=y)
         super().__init__(id)
         self.__width = width
@@ -86,9 +87,11 @@ class Rectangle(Base):
             print(" "*self.x, end="")
             print("#"*self.width)
 
-    """def __str__(self):"""
-    """return the rectangle description"""
-    """return "[Rectangle] ({}) {}/{} - {}/{}".format
-    (self.id, self.__x, self.__y, self.__width, self.__height)"""
+    def __str__(self):
+        """return the rectangle description"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.__x, self.__y,
+                                                       self.__width,
+                                                       self.__height)
 
     """def update(self, *args):"""
