@@ -20,12 +20,12 @@ class Rectangle(Base):
             and for set value """
         for k, v in kwargs.items():
             if k == "width" or k == "height":
-                if type(v) != int:
+                if type(v) is not int:
                     raise TypeError("{} must be an integer".format(k))
                 if v <= 0:
                     raise ValueError("{} must be > 0".format(k))
             else:
-                if type(v) != int:
+                if type(v) is not int:
                     raise TypeError("{} must be an integer".format(k))
                 if v < 0:
                     raise ValueError("{} must be >= 0".format(k))
