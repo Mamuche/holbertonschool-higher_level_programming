@@ -27,3 +27,22 @@ class Square(Rectangle):
         self.validator(height=value)
         self.width = value
         self.height = value
+
+    def update(self, *args, **kwargs):
+        """assigns an argument to each attribute"""
+        if args and len(args) > 0:
+            list = ["id", "size", "x", "y"]
+            for i in range(len(args)):
+                setattr(self, list[i], args[i])
+        else:
+            for k, v in kwargs.items():
+                setattr(self, k, v)
+
+    def to_dictionary(self):
+        """returns the dictionary representation of a Rectangle"""
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }
