@@ -84,8 +84,8 @@ class Rectangle(Base):
         for vertical in range(self.y):
             print("")
         for row in range(self.height):
-            print(" "*self.x, end="")
-            print("#"*self.width)
+            print(" " * self.x, end="")
+            print("#" * self.width)
 
     def __str__(self):
         """return the rectangle description"""
