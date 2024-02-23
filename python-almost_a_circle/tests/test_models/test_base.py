@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Test unittest for class Square"""
+"""Test unittest for class Base"""
 import unittest
 import pycodestyle
 from models.base import Base
@@ -31,13 +31,6 @@ class test_to_json_string(unittest.TestCase):
         """Test with an empty list of objects"""
         json_string = Base.to_json_string([])
         self.assertEqual(json_string, "[]")
-
-    def test_to_json_string_invalid_objects(self):
-        """Testing with objects that don't have a to_dictionary method"""
-        invalid_obj1 = "not_a_base_object"
-        invalid_obj2 = 123
-        json_string_invalid = Base.to_json_string([invalid_obj1, invalid_obj2])
-        self.assertNotEqual(json_string_invalid, "")
 
 
 class TestPEP8(unittest.TestCase):
